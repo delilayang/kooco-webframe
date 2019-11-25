@@ -1,0 +1,135 @@
+@import './config/_theme';
+@import './config/_eleUI';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; 
+}
+
+header {
+    background: rgb(84, 92, 100);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .logo {
+        position: absolute;
+        left: 0;
+        width: 300px;
+        height: 80px;
+    }
+    .navigator {
+        .welcome-member {
+            height: 20px;
+            color: #fff;
+            font-size: 10px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .el-menu {
+            display: flex;
+        }
+    }
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.wrapper {
+    background: #ccc;
+    height: auto;
+    width: 100%;
+    .hot-news {
+        font-size: 12px;
+        display: inline-flex;
+        &.news-titile {
+            width: 100px;
+            float: left;
+        }
+        .marquee-text {
+            width: 1038px;
+        }
+    }
+}
+
+footer {
+    background: #666;
+    height: auto;
+    width: 100%;
+    color: #ccc;
+    padding: 15px 0;
+    article {
+        font-size: 12px;
+        text-align: left;
+    }
+    .qrcode-section {
+        display: inline-flex;
+    }
+}
+
+.float-banner {
+    position: fixed;
+    right: 10px;
+    width: 100px;
+    height: auto;
+    background: #333;
+    display: block;
+    z-index: 99;
+    top: 100px;
+    div {
+        margin: 10px 0;
+    }
+    .title {
+        color: #fff;
+    }
+}
+
+.index-login-form {
+    width: 300px;
+    height: auto;
+    background: #fff;
+    float: right;
+    margin: 10px 10px 0 0;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0,0,0, .2);
+    padding: 10px;
+}
+
+.banner-inner {
+    width:100%; 
+    height: 300px;
+}
+
+.page-head {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    .page-search {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.vip-detail {
+    text-align: left;
+}
+
+.link-label {
+    i {
+        font-size: 30px;
+        color: #333;
+    }
+}
